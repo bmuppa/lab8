@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signin Page</title>
+    </head>
+    <body>
+        <form method="POST" actions="">
+            {{form.hidden_tag()}}
+            {{form.user_name.label}} {{form.user_name}}
+            {{form.password.label}} {{form.password}}
+            {{form.submit}}
+        </form>
+        <a href="{{url_for('signup')}}">Click Here to Signup </a>
+    </body>
+</html>

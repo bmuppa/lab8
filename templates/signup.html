@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup Page</title>
+    </head>
+    <body>
+        <form method="POST" actions="">
+            {{form.hidden_tag()}}
+            {{form.firstname.label}} {{form.firstname}}
+            {{form.lastname.label}} {{form.lastname}}
+            {{form.user_name.label}} {{form.user_name}}
+            {{form.password.label}} {{form.password}}
+            {{form.submit}}
+        </form>
+        <a href="{{url_for('index')}}"> Please Click here to Login</a> 
+    </body>
+</html>
